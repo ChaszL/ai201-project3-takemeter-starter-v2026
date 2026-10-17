@@ -54,11 +54,10 @@ whether you hit them:
 ## 1.
 
 <!-- Your criterion. It must name a number. -->
-
-
+The model will have at least 0.60 accuracy on the held-out set
 
 **Why this target:**
-
+Since there are four labels, 25% is the guessing rate. However, in the community, most comments are made about giving some type of advice, so a model that always guessed the most common label could score around 35–40% without really telling labels apart. 0.60 helps prove the model can accuratley distinguish labels especially since layout_tip and block_advice labels share similar words.  
 
 
 ---
@@ -66,11 +65,10 @@ whether you hit them:
 ## 2.
 
 <!-- Your criterion. -->
-
-
+The F1 for the outside_resources label will be above 0.70
 
 **Why this target:**
-
+Since the label has very distinct wording and mostly includes links and mentioned platforms or people, the model should be able to recognize most of these. It is not higher since some comments metion youtubers as credit for their comment but not spoecifically saying to watch them.
 
 
 ---
@@ -78,11 +76,10 @@ whether you hit them:
 ## 3.
 
 <!-- Your criterion. -->
-
-
+Fewer than 30% of the true block_advice posts in the test set will be predicted as layout_tip, and fewer than 30% of the true layout_tip posts will be predicted as block_advice
 
 **Why this target:**
-
+This is the hardest boundary I named earlier in my readme. The wording for these labels are similiar and can easily be confused. So the model being able to tell the difference in changing blocks vs adding blocks is important. I did not make it stricker because the wording is similair and could mean there is guessing. 
 
 
 ---
@@ -90,7 +87,7 @@ whether you hit them:
 ## 4.
 
 <!-- Your criterion. -->
-
+On test comments that open with a chat, but give a tip, at least 60% will be labeled by the tip and not as general_chat. 
 
 
 **Why this target:**
@@ -102,11 +99,10 @@ whether you hit them:
 ## 5.
 
 <!-- Your criterion. -->
-
-
+No label will make up less than 15% of my dataset or more than 40% of my dataset.
 
 **Why this target:**
-
+This is to keep data from being lopsided. Most comments in this community give some type of advice, so layout_tip and block_advice could easily take over while general_chat and outside_resources end up tiny. With general_chat and outside_reseasources being too low, the model will not have enough data to train on them with.
 
 
 ---
