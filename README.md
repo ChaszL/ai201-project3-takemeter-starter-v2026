@@ -41,6 +41,7 @@
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
+This reads comments from a Reddit forum about building advice for a Minecraft build. It sorts each comment into one of four labels: general_chat, block_advice, layout_tip, and outside_resources. General chat is any comment with no real building advice, block advice explains how to modify the existing structure by replacing blocks, layout tips explain how to add to the structure or add details that require building, and outside resources direct users to outside websites and videos about building. The goal is to separate comments that actually help the builder from the noise, and to tell what kind of help each one gives.
 
 **Community:** Minecraft building advice.
 
@@ -102,6 +103,13 @@ A comment that directs the poster to another website, youtube video, or reasourc
 **Example 2:**
 > Pay attention to the real world. Look at details of architecture. Do you want to build a castle? Google "castles" and take a look at examples. Want to build a different roof? Google "roofs". Expend time in creative mode practicing walls, roofs, foundations, floors, gardens, etc.
 
+### Stretch: a fourth label
+
+**The fourth label:** `outside_resources`
+
+**What it captures that the other three miss:** Many comments in this thread don't give advice themselves. They send the poster somewhere else, such as a Grian video, Pinterest, or a Google search for real buildings. Without this label those comments would be forced into layout_tip or block_advice even though they contain no tip, or into general_chat even though they do help.
+
+
 ### The hardest boundary
 
 **Which two labels:**
@@ -132,7 +140,7 @@ I did the first 20 cold and then the rest were prelabled by claude and checked b
 | block_advice | 20 | 8.7% |
 | layout_tip | 86 | 37.6% |
 | outside_resources | 56 | 24.5% |
-| general_chat | 73 | 29.3% |
+| general_chat | 67 | 29.3% |
 | **Total** | 229 | 100% |
 
 **Three hard cases**
@@ -156,7 +164,7 @@ I did the first 20 cold and then the rest were prelabled by claude and checked b
 > *Could have been:*
 >layout_tips
 > *I chose, because:*
->I chose this because it seems like most of this information comes from pintrest and saying that was a way to direct the poster to pintrest.
+>I chose outside_resources because it seems like most of this information comes from pintrest and saying that was a way to direct the poster to pintrest.
 
 **3.**
 > *The post:*
@@ -209,7 +217,7 @@ of next unit's variance. -->
 - *What I changed:* I changed some labels to better fit the situation and context 
 
 **Pre-labelling disclosure:**
-
+I labeled 20 post. Claude prelabeled 209
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
