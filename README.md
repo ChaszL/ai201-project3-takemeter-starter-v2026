@@ -42,19 +42,15 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-**Community:** Minecraft building advice (comments replying to people asking
-how to improve their builds).
+**Community:** Minecraft building advice.
 
-**Candidate distinctions (from reading):**
+**Candidate distinctions:**
 
-1. **Structured vs. unstructured advice.** Most comments are long paragraphs
-   of several sentences, but some break their advice into bullets or numbered
-   tiers. The structured ones exist but don't come up often.
+1. **Structured vs. unstructured advice.** Most comments are short sentances or paragraphs, but some comments are long, bulleted or numbered comments that give advice. 
 2. **Advice to center the house vs. not.** Some comments recommend centering
-   the house on the plot or in the scene, but most don't mention placement.
-3. **Points to YouTube vs. gives advice directly.** A lot of comments tell the
-   poster to watch YouTubers, often Grian by name, instead of (or as well as)
-   giving their own tips.
+the house, but most don't mention that placement. Some comments also say the uneven aspect of the house gives it more character and to leave it. 
+1. **Points to YouTube vs. gives advice directly.** A lot of comments tell the
+   poster to watch YouTubers, often Grian and they do this mostly while giving advice
 
 ---
 
