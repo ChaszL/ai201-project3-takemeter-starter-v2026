@@ -91,7 +91,7 @@ On test comments that open with a chat, but give a tip, at least 60% will be lab
 
 
 **Why this target:**
-
+This will test if the model will notice the tip and label it correctly instead of seeing a chat response and assuming it is a chat. Lots of reddit communities open with a chat but then give advice, so this can really test on that.
 
 
 ---
