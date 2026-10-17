@@ -118,18 +118,22 @@ If following the advice changes the shape, outline, or structure of the build, i
      cases. -->
 
 **Where the posts came from:**
+These post came from a reddit forum about minecraft building advice 
+https://www.reddit.com/r/Minecraft/comments/1193yy0/tips_on_how_to_build_better/
 
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
+I did the first 20 cold and then the rest were prelabled by claude and checked by me. 
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| block_advice | 20 | 8.7% |
+| layout_tip | 86 | 37.6% |
+| outside_resources | 56 | 24.5% |
+| general_chat | 73 | 29.3% |
+| **Total** | 229 | 100% |
 
 **Three hard cases**
 
@@ -138,24 +142,30 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
->
+> "It’s all about detailing. You build similar to how I start a build. General shape I’m going for and from there play with different window designs, play with stairs and half slabs to outline and border edges and such. Vary the color pallets and textures, add verticality with balconies, add more color with plant life. It’s all about layering on details to make the place feel less like a box and more like a functional building. Keep practicing you’ve got a good start!"
+
 > *Could have been:*
->
+> block_advice
 > *I chose, because:*
+> I chose layout_tips because it is mainly talking about placing blocks that will change the structure and not just changing blocks to improve the build.
 
 **2.**
 > *The post:*
->
+>"Front porches, darker roofs (also bring them out another block so there's an overhang), and place the logs in the corners one block out too for some depth. Windows with trapdoors for shutters look nice too. And if you want to get real fancy, use some shears to get vines and leaves for some greenery. I use Pinterest a lot for inspo"
+
 > *Could have been:*
->
+>layout_tips
 > *I chose, because:*
+>I chose this because it seems like most of this information comes from pintrest and saying that was a way to direct the poster to pintrest.
 
 **3.**
 > *The post:*
->
+> "Do not build roofs out of wood. It can burn down when struck by lightning. Use fireproof materials instead. Stone, copper, anything that doesn't burn. When you build the roof, make eaves by giving it an overhang. An overhang of one block would improve it quite a bit. Some people build these overhangs out of a different block to give the roof some contrast. If you do this, the top of the roof can be built out of the same block (use slabs)."
+
 > *Could have been:*
->
+> block_advice
 > *I chose, because:*
+> I chose layout_tips because it is mainly talking about placing blocks that will change the structure and not just changing blocks to improve the build.
 
 ---
 
@@ -164,15 +174,15 @@ Say so plainly — the disclosure is required, not penalised. -->
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
 **Base model:**
-
+distilbert-base-uncased
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
-
+3 epochs, learning rate 2e-5, batch size 16, seed 42, max length 128 tokens. Trained on CPU.
 **Anything I changed from the defaults, and why:**
-
+Nothing. I used the default settings for this first run so I'd have a baseline to compare against.
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
-
+70/15/15 stratified split of 229 posts: 159 train / 35 val / 35 test.
 
 
 ---
@@ -188,15 +198,15 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked for a complete unlabeled csv file of all the post under a reddit threat.
+- *What came back:* A complete unlabeled csv file of all post in the minecraft building advice forum
+- *What I changed:* I changed some of the formatting inside the file since some comments had errors.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* To prelabel all the remaining data that did not have a cold note on it
+- *What came back:* all other data was prelabeled and ready to be checked and corrected by me
+- *What I changed:* I changed some labels to better fit the situation and context 
 
 **Pre-labelling disclosure:**
 
