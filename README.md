@@ -62,36 +62,54 @@ the house, but most don't mention that placement. Some comments also say the une
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `general_chat`
 
 **Definition:**
-
+A comment thart gives no actual building advice such as praising them, jokes, questions, and etc.
 **Example 1:**
->
+> TNT and lava make a great combo
 
 **Example 2:**
->
+> Take away the shield and you'd think this was from 2014
 
-### `label_two`
+### `layout_tip`
 
 **Definition:**
-
+A comment that gives structural advice on changing something about the builds structure or its surroundings. 
 **Example 1:**
->
+> Try to avoid having completely flat surfaces. Try extending the roof out a block or two, consider adding a frame around the corners of the building, maybe have glass pane windows with a flower box in front, etc.
 
 **Example 2:**
->
+> Add dimension! I know it sounds weird and wasteful but it will make a big difference- take your logs on the side, and pull them towards the front of the house by one block. Then take more logs and place them on top of one log, and go across until you meet the other log. By this time you should be able to put your face against the planks, and have your head under (but not touching!) the logs. Do that all the way around. Then build the logs up and adjust the roof so that they cover the logs top. Add windows some windows on the front of the house and your done!
+
+### `block_advice`
+
+**Definition:**
+A comment that give advice on which blocks to use to make the build look appealing. 
+**Example 1:**
+> Dont use the same block for everything, for example, use another wood for roof or even stone will look great
+
+**Example 2:**
+> I only do simple with minimal detail, but what I'd do is use spruce for the roof, or cobble, and cobble for the floor, and use some lanterns to light up the exterior and give it something extra.
+
+### `outside_resources`
+
+**Definition:**
+A comment that directs the poster to another website, youtube video, or reasource outside the original public channel.
+**Example 1:**
+> Watch a Grian video?
+
+**Example 2:**
+> Pay attention to the real world. Look at details of architecture. Do you want to build a castle? Google "castles" and take a look at examples. Want to build a different roof? Google "roofs". Expend time in creative mode practicing walls, roofs, foundations, floors, gardens, etc.
 
 ### The hardest boundary
 
 **Which two labels:**
-
+`block_advice` and `layout_tip`
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
-
-
-
+If following the advice changes the shape, outline, or structure of the build, it's layout_tip, even if it names blocks. If the shape stays the same and only materials change, it's block_advice
 ---
 
 ## The Dataset
