@@ -232,12 +232,12 @@ I labeled 20 post. Claude prelabeled 209
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy | 0.543 |  |  |
-| Macro F1 | 0.329 |  |  |
-| F1 — `block_advice` | 0.000 |  |  |
-| F1 — `general_chat` | 0.000 |  |  |
-| F1 — `layout_tip` | 0.706 |  |  |
-| F1 — `outside_resources` | 0.609 |  |  |
+| Overall accuracy | 0.543 | 0.429 | -0.114 |
+| Macro F1 | 0.329 | 0.219 | -0.109 |
+| F1 — `block_advice` | 0.000 | 0.000 | 0.000 |
+| F1 — `general_chat` | 0.000 | 0.286 | +0.286 |
+| F1 — `layout_tip` | 0.706 | 0.591 | -0.115 |
+| F1 — `outside_resources` | 0.609 | 0.000 | -0.609 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
@@ -248,7 +248,7 @@ I predict my trained model will beat the block_advice and general_chat label F1 
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
 
-
+The gap in my results means that my fine tuning did worse than the baseline because my model chose layout_tip for a lot of labels and completley missed outside_resources. My prediction was somewhat right because general chat did better than baseline, but block_advice did not.
 
 ---
 
