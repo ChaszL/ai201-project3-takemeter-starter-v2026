@@ -232,14 +232,17 @@ I labeled 20 post. Claude prelabeled 209
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.543 |  |  |
+| Macro F1 | 0.329 |  |  |
+| F1 — `block_advice` | 0.000 |  |  |
+| F1 — `general_chat` | 0.000 |  |  |
+| F1 — `layout_tip` | 0.706 |  |  |
+| F1 — `outside_resources` | 0.609 |  |  |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+I predict my trained model will beat the block_advice and general_chat label F1 since the baseline model got zero of those correct.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added

@@ -1,0 +1,215 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 35,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 35,
+    "accuracy": 0.5428571428571428,
+    "f1_macro": 0.3286445012787724,
+    "per_label": {
+      "block_advice": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "general_chat": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "layout_tip": {
+        "precision": 0.5714285714285714,
+        "recall": 0.9230769230769231,
+        "f1": 0.7058823529411765,
+        "support": 13
+      },
+      "outside_resources": {
+        "precision": 0.5,
+        "recall": 0.7777777777777778,
+        "f1": 0.6086956521739131,
+        "support": 9
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Try to avoid having completely flat surfaces. Try extending the roof out a block or two, consider adding a frame around the corners of the building, maybe have glass pane windows with a flower box in front, etc.",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "I\u2019ve tried to emulate B-Dubs\u2019 style, but he just has a real amazing eye for block pallets that I just don\u2019t have (yet). I\u2019m gonna shout out r/detailcraft as a place to find some inspiration or ideas on building. Something that GoodTimesWithScar, BDoubleO100, and Keralis, (and now a lot of other hermits have adopted this) do with their builds is they challenge themselves to use a block in their build that isn\u2019t normally used, and I think it really helps to expand our comfort zones and to try new things. Example: B-Dubs loves diorite and that block used to get so much hate from the other hermits, but B-Dubs was able to use it in his builds successfully. So much so that he built an entire castle out of diorite and Iskall said he actually liked it.",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Not trying to be rude but the house looks like a giant forehead, so to fix it add hair and bangs lol",
+      "gold": "general_chat",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Bro is back in 2011",
+      "gold": "general_chat",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Exactly, adding more dimensions to your build elevate it significantly",
+      "gold": "general_chat",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Add more depth to the wall by making it 3 dimensions instead of just flat. Always helps with builds",
+      "gold": "general_chat",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "I only do simple with minimal detail, but what I'd do is use spruce for the roof, or cobble, and cobble for the floor, and use some lanterns to light up the exterior and give it something extra.",
+      "gold": "block_advice",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "https://youtu.be/GxkLiHpye0s",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "TNT and lava make a great combo",
+      "gold": "general_chat",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Grim is a fantastic minecraft builder",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Idk what do you mean, this house looks great",
+      "gold": "general_chat",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Add more depth",
+      "gold": "general_chat",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Extend the stairs on the roof out by one",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "What would work great here is letting the roof stick out 1 block this helps to fight the boxness",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Make it more 3 dimensional as apposed to kinda flat",
+      "gold": "general_chat",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "You can find a lot of helpful videos from members Hermitcraft and Empires. Some members are more focused on Redstone than building, but their talents seem to rub off on each other. Besides the already mentioned Grian playlist, I don't know if there's any other bulding tutorial playlist, but they will often explain how their building something. Goodtimeswithscar and Geminitay have some tutorials on building trees.",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Add an extra layer of stars to the roof as a kind of overhang, to give it more depth",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Add depth, check tutorials on how to add depth to builds and also decorate them",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Add dimension! I know it sounds weird and wasteful but it will make a big difference- take your logs on the side, and pull them towards the front of the house by one block. Then take more logs and place them on top of one log, and go across until you meet the other log. By this time you should be able to put your face against the planks, and have your head under (but not touching!) the logs. Do that all the way around. Then build the logs up and adjust the roof so that they cover the logs top. Add windows some windows on the front of the house and your done!",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Add cobblestone on the first layer of the walls, add windows using glass, make the oak logs connect on the top tight below the stairs",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "I would try and add more depth like make the stairs come out another block, and try and use different blocks.",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Add depth to your walls. Push things in or out a block to add depth. For example you can move those logs outwards. Never have a completely flat wall with one block type. Try to have 2 or 3 blocks of depth with features at multiple levels. Use a multitude of blocks. Blocks that have colour that complement each other work together. The most common palette is two colours that contrast or complement eachother and a variety of textures in both colours. For example wood and stone work together well well and using planks, logs, stripped wood for the brown colours and then stone, cobblestone, stone bricks and adesite for the grey colours. Use blocks that aren't cubes. Things like buttons, stairs, fences, wallls, ladders all add detail to your build. Make your layout interesting. For a house specifically experiment with different shaped room, amount of stories, the height of each stories, connections between rooms. Don't always stick to a grid for rooms. Add exterior features. If you have a flat wall with nothing maybe add a window that can have a planter box or a balcony area. Add a chimney or lightning rood to the roof. Anything you might expect to be attached to the outside of a building. Have a progression upwards. Usually this is done by adding a strip at the bottom of the walls. But having your building visually slightly change as it goes upwards is very good. Don't follow any of this strictly. But take what you can and use it. Happy building.",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "I'll talk about only this front facing part Add variations This one is pretty easy. Instead of simply using a single block, try to break it up by using similar but \"not-so-similar\" blocks; for example, you can use stripped oak logs, maybe even beehives; If you're like me and have no idea what looks good with what, check out this: https://www.blockpalettes.com/palettes?block=oak_planks This applies to the door as well; try to use a different one (like a spruce door, for example)The roof for instance can be made with a different stairs material (like cobblestone, dark oak, those red bricks or whatever else you like - just try not to use the same color as the walls Add depth This is probably the most important part. Whenever you see a plain 3x3 made with very similar materials, try adding a window, some stairs, or even simply adding an extra layer in front",
+      "gold": "outside_resources",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Also his how NOT to build, that video helped me tremendously",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Layers on layers. Look at buildings in real life and other people builds, the main thing you will notice is that things aren\u2019t just flat. Bring your corner pillars out diagonally one block and make a support truss going across connecting them(you can use stairs to make diagonal lines from the cross to the roof to put more detail), extend the roof to cover the extra space(real houses do this for drainage), add some flower boxes, windows with trapdoors around them for depth(spruce on either side looks like storm shudders), try different roof designs using a mix of slabs and stairs to end up with a shorter less peaked roof, throw a chimney up there somewhere with a campfire to make it look like you have a fire going inside. Minecraft has a ton of blocks to choose from, throw a bunch down and see how you like the pallet. Stone types make a strong looking roof but can look out of place if the house looks like it would collapse under the weight. Different wood types fit different places, darker woods look weathered like they are an exterior thing(but can absolutely work inside) while lighter woods like birch make a brighter more \u201cwelcoming\u201d interior. The creativity goes as far as you will take it.",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Texturing and adding depth will help a lot. For beginners I recommend going to Pinterest and looking up different types of buildings and layering techniques. Take note of what you like and what the builder did to make it look nice",
+      "gold": "outside_resources",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Add depth: overhangs, windowsills etc",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "3d space",
+      "gold": "general_chat",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Having depth is really important. Not having just a wall be one rectangle, but building frames around the wall, \"on top of it\" to build shape, add block variety, and detail.",
+      "gold": "block_advice",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Aspect ratio. Harmonic proportions. Euclidean geometry. Etc etc.",
+      "gold": "layout_tip",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Basically think about how it would be in real life. Create a story around your build. Who lives there? What is their job? Is it a farmer? Maybe he needs a barn or his wife decided to put flowers in front of the house etc. Use reference images. Go to google type the kind of architecture you want, the year it would've been built, the region (middle east, Asian etc). Make the corners stand out by one block, also make the walls at least two blocks, that way you can decorate it more. Support support support. Your buildings need support to feel alive and real. (See first tip)",
+      "gold": "outside_resources",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Windows!! Windows, overhangs, and other ledges help break up all that empty space up there at the top, and keeps it from looking so empty. Also try making more shapes than just the box/rectangle? As in, add a few off shoot rooms to what you have, which will make it look a lot less\u2026 blocky, I suppose. Less like a shack and more like a house. Added bonus of forcing the roof to be less straightforward. In general, just have more going on in the design!",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "The stone cutter is phenomenal",
+      "gold": "general_chat",
+      "predicted": "outside_resources"
+    },
+    {
+      "text": "Depth, depth and depth. Bulid walls in 3D not in 2D. Make your wall 2 or even 3 blocks thick. Each layer with a different block, but make sure they suit each other. Put glass for windows only in the most internal layer.",
+      "gold": "layout_tip",
+      "predicted": "layout_tip"
+    },
+    {
+      "text": "Different colored Stairs. Either some kind of stone or a darker shade of wood",
+      "gold": "block_advice",
+      "predicted": "layout_tip"
+    }
+  ]
+}
