@@ -256,6 +256,7 @@ The gap in my results means that my fine tuning did worse than the baseline beca
 
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
+Run on cpu. Accuracy moved 0.057 across seeds.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
