@@ -323,7 +323,7 @@ Run on cpu. Accuracy moved 0.057 across seeds.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 25 / 30 = 83%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -347,26 +347,55 @@ Run on cpu. Accuracy moved 0.057 across seeds.
 
 **1.**
 > *The post:*
->
+> I tracked sleep against session quality for eleven weeks. Under seven hours the next day's intervals were 6-8 seconds per mile slower, every time bar one. Small sample, one runner, but it's consistent enough that I've stopped scheduling hard days after late shifts.
 > *Staff said / I said:*
->
+> analysis/hot_take
 > *My call, and why:*
->
+> Staff was right, because rule 1 states that a post is analysis only if the numbers are checkable fact and not just decoration. In this, the numbers are checkable fact and not just numbers.
 > *Which pile:*
+> (a) The rule covered it and I applied hot_take loosely.
 
 **2.**
 > *The post:*
->
+> Someone handed my kid an orange slice at mile 22 and I have been crying on and off since.
 > *Staff said / I said:*
->
+> reaction/analysis
 > *My call, and why:*
->
+> Staff was right, rule 3 states that being recent does not mean it is not analysis, but in this case I had confused what I thought to be checkable fact for something that is not checkable.
 > *Which pile:*
+> (a) The rule covered it and I applied hot_take loosely.
 
+**3.**
+> *The post:*
+> Carbon plates aren't the whole story. My times dropped 2% in the shoes and another 2% the following year in the same pair, when the only thing that changed was going from 35 to 50 miles a week.
+> *Staff said / I said:*
+> analysis/hot_take
+> *My call, and why:*
+> Staff was right, because rule 1 states that a post is analysis only if the numbers are checkable fact and not just decoration. In this, the numbers are checkable fact and not just numbers.
+> *Which pile:*
+> (a) The rule covered it and I applied hot_take loosely.
+
+**4.**
+> *The post:*
+> The 10K route was remeasured in 2021 and came out 60 metres long. Everyone comparing PBs from before and after that is comparing two different races, which is about 12 seconds at club pace.
+> *Staff said / I said:*
+> analysis/hot_take
+> *My call, and why:*
+> I was right, because rule 1 states that a post is analysis only if the numbers are checkable fact and not just decoration. In this, the numbers are checkable fact and not just numbers since it being remeasured does not automattically mean the last races were the wrong length and those who raced could have right numbers.
+> *Which pile:*
+> (c) The rule could be read either way and my reading is defensible.
+
+**5.**
+> *The post:*
+> Wind was so bad on the out section I was leaning at about 20 degrees. Coming back felt like cheating.
+> *Staff said / I said:*
+> reaction/hot_take
+> *My call, and why:*
+> Staff was right, rule 2 states that the post being about the person versus being about a general thought is how to differentiate. This post is mostly about how to writer feels which makes it reaction.
+> *Which pile:*
+> (a) The rule covered it and I applied hot_take loosely.
 **What the pattern in my disagreements tells me:**
-
-
-
+three of five of my analysis were hot_take. I mistaked a lot of analysis labels for hot_takes labels. Since I was incosistient here I could have also been inconsistent in my block_advise and layout_tip labels 
 ---
 
 ## The Improvement
