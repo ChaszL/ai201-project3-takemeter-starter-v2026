@@ -294,11 +294,11 @@ Run on cpu. Accuracy moved 0.057 across seeds.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | The model will have at least 0.60 accuracy on the held-out set | ≥ 0.60 | MISSED | All three seeds are below 0.60 so it failed |
+| 2 | The F1 for the outside_resources label will be above 0.70 | > 0.70 | MISSED | The F1 for each of the seeds is 0.000 which means it failed |
+| 3 | Fewer than 30% of the true block_advice posts in the test set will be predicted as layout_tip, and fewer than 30% of the true layout_tip posts will be predicted as block_advice | each < 30% | MISSED | I looked to see if any layout_tip labels were confused with block_advice which after looking, all block advice were mistakened for layout_tip while it was the opposite for layout_tip being mistakened for block advice |
+| 4 | On test comments that open with a chat, but give a tip, at least 60% will be labeled by the tip and not as general_chat. | ≥ 60% | UNMEASUREABLE | This criterion was unmearureable because the notebook does not save the post predictions|
+| 5 | No label will make up less than 15% of my dataset or more than 40% of my dataset. | 15–40% | MISSED | I checked to see how much of the dataset was made up of each label to make sure all were within range. block_advice only made up 8.7% of the dataset which is a fail |
 
 **Diagnoses**
 
@@ -311,6 +311,15 @@ Run on cpu. Accuracy moved 0.057 across seeds.
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
+#1 The cause of this was that the model was not trained enough which caused it to guess layout_tip for many labels. The untrained baseline scored around a 0.543 so that means that a trained model could learn this.
+
+#2 The baseline model scored a 0.609 getting the outside resources correct. However the trained model got none of these right which means that it needs to be trained more especially when outside resources makes up about 56 post which is plenty.
+
+#3 The cause of this is that there are not enough block_advice post to compare to layout_tip post. This could also be caused by undertraning and mislabeling as well. I know this because all block_advice post were mistakened for layout_tip but no layout tips were mistakened for block_advice. I also noticed that the two lables have similar wording which could have confused me in my labeling like in my agreements between analysis and hot_take
+
+#4 This criterion was unmeasureable because my notebook does not save post predictions. 
+
+#5 The cause of this is that my block advice label has similar wording as layout_tip. I know this because my decision rules covered mostly block changes and not the structure changes that layout tip has. The forum mainly talked about structure changeswhich is why block advice was the smallest training and testing samples out of all the dataset. 
 
 
 ---
