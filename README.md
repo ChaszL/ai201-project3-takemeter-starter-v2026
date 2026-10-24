@@ -259,29 +259,30 @@ The gap in my results means that my fine tuning did worse than the baseline beca
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. The model will have at least 0.60 accuracy on the held-out set | ≥ 0.60 | 0.429 | 0.371 | 0.400 | MISSED |
+| 2. The F1 for the outside_resources label will be above 0.70 | > 0.70 | 0.000 | 0.000 | 0.000 | MISSED |
+| 3. Fewer than 30% of the true block_advice posts in the test set will be predicted as layout_tip, and fewer than 30% of the true layout_tip posts will be predicted as block_advice | each < 30% | 100% / 0% | 100% / 0% | 100% / 0% | MISSED |
+| 4. On test comments that open with a chat, but give a tip, at least 60% will be labeled by the tip and not as general_chat. | ≥ 60% | Unmeasureable | Unmeasureable | Unmeasureable | MISSED |
+| 5. No label will make up less than 15% of my dataset or more than 40% of my dataset. | 15–40% | block_advice 8.7% | block_advice 8.7% | block_advice 8.7% | MISSED |
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| true \ predicted | general_chat | layout_tip | block_advice | outside_resources |
+|---|---|---|---|---|
+| **general_chat** | 2 | 8 | 0 | 0 |
+| **layout_tip** | 0 | 13 | 0 | 0 |
+| **block_advice** | 0 | 3 | 0 | 0 |
+| **outside_resources** | 2 | 7 | 0 | 0 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
 
-
+8 real `general_chat` posts called `layout_tip` and 0 went the other direction. This means that the model noticed that layout tip was a common label and guessed that label over others. 
 
 ---
 
