@@ -439,10 +439,15 @@ This did help, and I know because my F1 for almost every label increased and got
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+Crtierion #2. This was missed because general chat was being mistakened for outside resources labels and vice versa so there was confusion. So the boundry between them needs to be looked into. 
 
+Criterion #3 & #5. This was missed because block advice does not have as many training samples or labeled post in general. The boundry between it and layout_tips is also hard to discover without seeing more examples. I would find more post that have block advice or lower the amount of layout_tips. 
+
+I stopped here because it is very hard to search for and label post and I will not have the time to find those post before the deadline
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
+I meant for the label block advice to search for post that gave advice on building styling without changing structure. Even after 10 epochs the model still never learned how to differenitiate between block_advice and layout_tip.
 <!-- Two sentences. Your confusion matrix is the evidence. -->
 
 
