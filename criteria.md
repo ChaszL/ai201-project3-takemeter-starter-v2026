@@ -93,6 +93,14 @@ On test comments that open with a chat, but give a tip, at least 60% will be lab
 **Why this target:**
 This will test if the model will notice the tip and label it correctly instead of seeing a chat response and assuming it is a chat. Lots of reddit communities open with a chat but then give advice, so this can really test on that.
 
+> **Revised in unit 6:** At least 60% of the true tip posts in the test set
+> (layout_tip, block_advice, outside_resources) will be given their
+> correct tip label, not general_chat or a different tip label.
+>
+> **Why revised:** The original couldn't be measured. The notebook doesn't save
+> per-post predictions, and nothing marks which test posts "open with chat," so
+> I couldn't produce a verdict. The revised version keeps the same idea and the same 60% target, and can be counted
+
 
 ---
 

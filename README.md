@@ -410,23 +410,26 @@ three of five of my analysis were hot_take. I mistaked a lot of analysis labels 
 ## The Improvement
 
 **What I changed:**
+I increased the training epochs from 3 to 10
 
 **Which diagnosis pointed at it:**
+almost all diagnosis pointed to this, but the main one was number 1 since it specified that model had low confidence and was guessing. 
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. The model will have at least 0.60 accuracy on the held-out set | ≥ 0.60 | 0.743 | 0.743 | 0.829 | MET |
+| 2. The F1 for the outside_resources label will be above 0.70 | > 0.70 | 0.875 | 0.632 | 0.824 | MISSED |
+| 3. Fewer than 30% of the true block_advice posts in the test set will be predicted as layout_tip, and fewer than 30% of the true layout_tip posts will be predicted as block_advice | each < 30% | 100% / 0% | 67% / 0% | 67% / 0% | MISSED |
+| 4. At least 60% of the true tip posts in the test set (layout_tip, block_advice, outside_resources) will be given their correct tip label, not general_chat or a different tip label. | ≥ 60% | 80% | 72% | 80% | MET |
+| 5. No label will make up less than 15% of my dataset or more than 40% of my dataset. | 15–40% | block_advice 8.7% | block_advice 8.7% | block_advice 8.7% | MISSED |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
+This did help, and I know because my F1 for almost every label increased and got better. I also can tell because accuracy and confidence in answers also increased. 
 
 
 
